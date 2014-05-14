@@ -32,21 +32,22 @@ var oculus = crapi.kickstarter['oculus-rift-step-into-the-game'];
 
 ## head back to the registry
     npm install kickstarter-crawler
-`kickstarter-crawler' is a module that fetches data when given a kickstarter url
+[kickstarter-crawler](https://github.com/ghostsnstuff/kickstarter-crawler) is a module that fetches data when given a kickstarter url
+let's find out who created the 'philosophy posters' kickstarter project and where it's from
 ```javascript
 var crapi = require('crapi');
 var ks = require('kickstarter-crawler');
 var opts = {
-  url: crapi.kickstarter['philosophy-posters']
+  url: crapi.kickstarter['philosophy-posters']     // url param for project
 };
-var project = new ks.project(options);
-project.getTitle().getCity(function(err, data) {
+var project = new ks.project(options);             // create a new project instance
+project.getCreator().getCity(function(err, data) { // fetch data
   if(err) throw err;
   console.log(data);
 });
 ```
 output
 ```javascript
-{ general_title: 'Philosophy Posters',
+{ general_creator: 'Max Temkin',
   location_city: 'chicago' }
 ```
