@@ -1,8 +1,9 @@
 ## crapi
 
-* crapi enables you to require a crowdfunding data set consisting of 69,294 projects (names and urls for now)
+* crapi enables you to require a crowdfunding data set consisting of 69,294 projects
+* currently names and urls are the only supported data points
 * data is organized around platforms (kickstarter and indiegogo for now)
-* each platform is a json where keys correspond to project names and values project urls
+* each platform is a json where keys correspond to project names and values to project urls
 
 ## installation
     npm install crapi
