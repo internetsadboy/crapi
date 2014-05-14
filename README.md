@@ -29,3 +29,24 @@ var crapi = require('crapi');
 var oculus = crapi.kickstarter['oculus-rift-step-into-the-game'];
 // http://www.kickstarter.com/projects/1523379957/oculus-rift-step-into-the-game
 ```
+
+## head back to the registry
+    npm install kickstarter-crawler
+`kickstarter-crawler' is a module that fetches data when given a kickstarter url
+```javascript
+var crapi = require('crapi');
+var ks = require('kickstarter-crawler');
+var opts = {
+  url: crapi.kickstarter['philosophy-posters']
+};
+var project = new ks.project(options);
+project.getTitle().getCity(function(err, data) {
+  if(err) throw err;
+  console.log(data);
+});
+```
+output
+```javascript
+{ general_title: 'Philosophy Posters',
+  location_city: 'chicago' }
+```
