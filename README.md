@@ -1,6 +1,8 @@
 ## crapi
 
-* crapi lets you require a crowdfunding data set consisting of 69,294 projects
+[![NPM](https://nodei.co/npm/crapi.png?downloads=true&stars=true)](https://nodei.co/npm/crapi/)
+
+* crapi lets you `require` a crowdfunding data set consisting of 69,294 projects
 * currently names and urls are the only supported data points
 * data is organized around platforms (kickstarter and indiegogo currently)
 * each platform is a json where keys correspond to project names and values to project urls
@@ -34,7 +36,7 @@ var oculus = crapi.kickstarter['oculus-rift-step-into-the-game'];
     npm install kickstarter-crawler
 [kickstarter-crawler](https://github.com/ghostsnstuff/kickstarter-crawler) is a module that fetches data when given a kickstarter url
 ***
-let's find out who created the 'philosophy posters' kickstarter project and where it's from
+let's find out who created the *philosophy posters* kickstarter project and where it's from
 ```javascript
 var crapi = require('crapi');
 var ks = require('kickstarter-crawler');

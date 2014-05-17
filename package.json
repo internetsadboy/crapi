@@ -1,6 +1,6 @@
 {
   "name": "crapi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "crowdfunding data set - 69,294 projects",
   "main": "crapi.js",
   "directories": {
@@ -14,9 +14,9 @@
     "url": "https://github.com/ghostsnstuff/crapi.git"
   },
   "keywords": [
-    "crowdfunding",
     "kickstarter",
     "indiegogo",
+    "crowdfunding",
     "data",
     "set"
   ],
@@ -24,7 +24,7 @@
     "tape":"*",
     "colors":"*"
   },
-  "author": "jared <jaredhalpert90@gmail.com> (http://jaredhalpert.com/)",
+  "author": "jared <jaredhalpert90@gmail.com> (http://gns.herokuapp.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ghostsnstuff/crapi/issues"
