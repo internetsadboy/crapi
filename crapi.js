@@ -1,1 +1,1 @@
-module.exports = require(__dirname+'/db/all.json');
+module.exports = require(__dirname+'/db/projects.json');

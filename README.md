@@ -1,8 +1,8 @@
 ## crapi
 
-* crapi enables you to require a crowdfunding data set consisting of 69,294 projects
+* crapi lets you require a crowdfunding data set consisting of 69,294 projects
 * currently names and urls are the only supported data points
-* data is organized around platforms (kickstarter and indiegogo for now)
+* data is organized around platforms (kickstarter and indiegogo currently)
 * each platform is a json where keys correspond to project names and values to project urls
 
 ## installation
@@ -41,7 +41,7 @@ var ks = require('kickstarter-crawler');
 var opts = {
   url: crapi.kickstarter['philosophy-posters']     // url param for project
 };
-var project = new ks.project(options);             // create a new project instance
+var project = new ks.project(options);             // create a new instance of project
 project.getCreator().getCity(function(err, data) { // fetch data
   if(err) throw err;
   console.log(data);

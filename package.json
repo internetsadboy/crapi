@@ -1,6 +1,6 @@
 {
   "name": "crapi",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "crowdfunding data set - 69,294 projects",
   "main": "crapi.js",
   "directories": {
